@@ -96,10 +96,9 @@
             </form>
             <div id="login-message" class="login-message"></div>
             <div class="box">
-                <h4>Add This name or password</h4>
-               <p>Username: Muhammad Suleman</p>
-                <p>Password: Suleman-Giaic</p>
-               
+                <h3>Add your favourate name or password</h3>
+              
+             
             </div>
             
         </div>
@@ -166,7 +165,7 @@
             const validUsername = 'Muhammad Suleman';
             const validPassword = 'Suleman-Giaic';
 
-            if (username === validUsername && password === validPassword) {
+            if (username !== validUsername && password !== validPassword) {
                 loginMessage.textContent = 'Login successful';
                 loginMessage.style.color = 'green';
 
