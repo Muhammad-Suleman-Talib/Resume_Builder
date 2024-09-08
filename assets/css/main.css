@@ -754,6 +754,8 @@ textarea{
   
     .preview-cnt-r {
       width: 140%;
+      margin-left: 20px;
+
     }
   
     .preview-image img {
