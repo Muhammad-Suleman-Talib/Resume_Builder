@@ -702,7 +702,7 @@ textarea{
 @media screen and (max-width: 420px) {
     .preview-cnt {
       flex-direction: column;
-      align-items: center;
+/*       align-items: center; */
     }
   
     .preview-cnt-l,
