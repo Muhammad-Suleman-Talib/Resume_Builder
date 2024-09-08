@@ -714,6 +714,8 @@ textarea{
     .preview-cnt-r {
       /* You might need to adjust or remove this width if it causes issues */
       width: 140%;
+      margin-left: 20px;
+
     }
   
     .preview-image img {
@@ -748,12 +750,12 @@ textarea{
   
     .preview-cnt-l,
     .preview-cnt-r {
-      width: 130%;
+      width: 170%;
       box-sizing: border-box; 
     }
   
     .preview-cnt-r {
-      width: 140%;
+      width: 180%;
       margin-left: 20px;
 
     }
@@ -764,22 +766,27 @@ textarea{
     }
   
     .preview-item-val {
-      font-size: 13px; /* Adjust font size for smaller screens */
+      font-size: 13px;
       white-space: normal;
       overflow: visible;
       text-overflow: clip;
       word-break: break-word;
+      line-height: 1.5; /* Adds space between lines of text */
+      margin-bottom: 10px; /* Adds gap between text elements */
     }
   
     .preview-blk-title h3 {
       font-size: 16px;
+      margin-bottom: 8px; /* Adds space below the title */
     }
   
     .container {
-      padding: 8px; /* Further reduce padding for 390px screens */
+      padding: 8px;
     }
   
     .preview-blk {
-      margin-bottom: 12px; /* Further reduce margin between blocks */
+      margin-bottom: 12px;
     }
 }
+
+
