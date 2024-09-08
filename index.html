@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+      /* Container for the login form */
+.login-form-container {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Input field styling */
+.input-field {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ddd; /* Softer border color */
+    border-radius: 5px;
+    background-color: #f7f7f7; /* Light background color */
+    font-size: 16px;
+    transition: border 0.2s ease-in-out; /* Smooth border transition */
+}
+
+/* Input field hover and focus effects */
+.input-field:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add blue shadow effect */
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for primary button */
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Lift the button on hover */
+}
+
+/* Login message styling */
+.login-message {
+    color: red;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Main content visibility control */
+.main-content {
+    display: none;
+}
+
+/* Add hover effect to the container */
+.login-form-container:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="login-form-container" id="login-section">
+        <div class="login-form-content text-center">
+            <h2 class="fs-24">Login</h2>
+            <form id="login-form">
+                <label for="username" class="fs-18">Username</label>
+                <input type="text" id="username" name="username" required class="input-field">
+
+                <label for="password" class="fs-18">Password</label>
+                <input type="password" id="password" name="password" required class="input-field">
+
+                <button type="submit" class="btn btn-primary text-uppercase">Login</button>
+            </form>
+            <div id="login-message" class="login-message"></div>
+            <div class="box">
+                <h4>Add This name or password</h4>
+               <p>Username: Muhammad Suleman</p>
+                <p>Password: Suleman-Giaic</p>
+               
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Main Content (hidden by default) -->
+    <div class="main-content" id="main-content">
+        <nav class="navbar bg-white">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="brand-and-toggler">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="iconsres.png" alt="" class="navbar-brand-icon">
+                            <span class="navbar-brand-text">Generated <span>resume.</span></span>
+                        </a>
+                        <button type="button" class="navbar-toggler-btn">
+                            <div class="bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="about-us">
+            <div class="container">
+               
+                <div class="about-us-content">
+                    <div class="about-us-text">
+                        <h3>Generate Your Professional Resume</h3>
+                        <p>Welcome to <strong>ResumePro</strong>, your go-to solution for creating a standout resume that captures your skills and experiences. Our advanced resume builder is designed to help you craft a resume that highlights your strengths and impresses potential employers.</p>
+                        <p>With <strong>ResumePro</strong>, you can easily customize your resume with professional templates, ensure all key details are included, and format it to perfection. Whether you're starting from scratch or updating an existing resume, our tool provides an intuitive and user-friendly experience.</p>
+                        <p>Our resume builder is tailored to meet industry standards and trends, helping you present your qualifications in the best light. Get noticed in the job market with a resume that truly reflects your professional journey and aspirations.</p>
+                        <p>Step into a brighter career future with <strong>ResumePro</strong>. Start building your resume today and take the first step towards achieving your career goals.</p>
+                        <a href="resume.html" class="btn btn-primary text-uppercase ">create my resume</a>
+                    </div>
+                    <div class="about-us-image">
+                        <img src="https://img.freepik.com/premium-psd/menu-man-with-name-it_1210728-124.jpg" alt="Designer at work">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <p class="fs-15">&copy;Copyright 2022. All Rights Reserved - <span>build.resume</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const loginMessage = document.getElementById('login-message');
+
+            // Dummy credentials
+            const validUsername = 'Muhammad Suleman';
+            const validPassword = 'Suleman-Giaic';
+
+            if (username === validUsername && password === validPassword) {
+                loginMessage.textContent = 'Login successful';
+                loginMessage.style.color = 'green';
+
+                // Show the main content after login
+                document.getElementById('main-content').style.display = 'block';
+                document.getElementById('login-section').style.display = 'none';
+            } else {
+                loginMessage.textContent = 'Invalid credentials';
+                loginMessage.style.color = 'red';
+            }
+        });
+        
+        function hideButton() {
+    document.getElementById("myButton").style.display = "none";
+  }
+  
+    </script>
+</body>
+
+
+
+
+      
+        
