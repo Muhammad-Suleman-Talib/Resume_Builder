@@ -741,4 +741,43 @@ textarea{
       margin-bottom: 15px; /* Reduce margin between blocks */
     }
   }
+    @media screen and (max-width: 390px) {
+    .preview-cnt {
+      flex-direction: column;
+    }
   
+    .preview-cnt-l,
+    .preview-cnt-r {
+      width: 130%;
+      box-sizing: border-box; 
+    }
+  
+    .preview-cnt-r {
+      width: 140%;
+    }
+  
+    .preview-image img {
+      width: 75px;
+      height: 75px;
+    }
+  
+    .preview-item-val {
+      font-size: 13px; /* Adjust font size for smaller screens */
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+      word-break: break-word;
+    }
+  
+    .preview-blk-title h3 {
+      font-size: 16px;
+    }
+  
+    .container {
+      padding: 8px; /* Further reduce padding for 390px screens */
+    }
+  
+    .preview-blk {
+      margin-bottom: 12px; /* Further reduce margin between blocks */
+    }
+}
