@@ -707,13 +707,13 @@ textarea{
   
     .preview-cnt-l,
     .preview-cnt-r {
-      width: 100%;
+      width: 130%;
       box-sizing: border-box; /* Include padding and border in element's total width and height */
     }
   
     .preview-cnt-r {
       /* You might need to adjust or remove this width if it causes issues */
-      width: 100%;
+      width: 140%;
     }
   
     .preview-image img {
